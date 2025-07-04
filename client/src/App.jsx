@@ -58,14 +58,14 @@ const App = () => {
             <Route path={RouteBlog} element={<BlogDetails />} />
             <Route path={RouteBlogEdit()} element={<EditBlog />} />
             <Route path={RouteCommentDetails} element={<Comments />} />
-            <Route path={RouteAddCategory} element={<AddCategory/>}/>
+            
             
           </Route>
 
           <Route element={<OnlyAdminAllowed />}>
             <Route path={RouteCategoryDetails} element={<CategoryDetails />} />
             <Route path={RouteEditCategory()} element={<EditCategory />} />
-            
+            <Route path={RouteAddCategory} element={<AddCategory/>}/>
             <Route path={RouteUser} element={<User />} />
           </Route>
         </Route>
